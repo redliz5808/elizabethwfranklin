@@ -1,0 +1,376 @@
+#projects {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    height: 100%;
+}
+
+.project-card-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50vw;
+    margin-top: calc(7.05rem - 3.13rem);
+}
+
+.project-card-group .section-title {
+    padding-left: 2rem;
+    color: var(--secondary);
+    font-family: var(--primary-family);
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 3.13rem;
+}
+
+.project-card-group .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    /* box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.2); */
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.project-card-group .project-card.neg-marg {
+    margin-top: -5rem;
+}
+
+.project-card-group .project-card.z-9 {
+    z-index: 9;
+}
+
+.project-card-group .project-card.z-8 {
+    z-index: 8;
+}
+
+.project-card-group .project-card.z-7 {
+    z-index: 7;
+}
+
+.project-card-group .project-card.z-6 {
+    z-index: 6;
+}
+
+.project-card-group .project-card.z-5 {
+    z-index: 5;
+}
+
+.project-card-group .project-card.z-4 {
+    z-index: 4;
+}
+
+.project-card-group .project-card.z-3 {
+    z-index: 3;
+}
+
+.project-card-group .project-card.z-2 {
+    z-index: 2;
+}
+
+.project-card-group .project-card h2,
+.project-card-group .project-card p {
+    font-size: 1.25rem;
+    text-align: start;
+}
+
+.project-card-group .project-card h2 {
+    font-family: var(--secondary-family);
+    font-weight: 600;
+}
+
+.project-card-group .project-card p {
+    font-family: var(--primary-family);
+    font-weight: 400;
+}
+
+.project-card-group .project-photos {
+    position: relative;
+    height: 15rem;
+    width: 100%;
+    z-index: 10;
+}
+
+.project-card-group .project-photos img {
+    height: 9.5rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    transform: matrix(1, 0.06, -0.05, 1, 0, 0) translateY(-50%);
+}
+
+.project-card-group .project-photos .image-two {
+    height: 9rem;
+    left: 11.5rem;
+    transform: rotate(-5.78deg) translateY(-50%);
+}
+
+.project-card-group .project-photos .image-three {
+    height: 7.75rem;
+    left: 21.5rem;
+    transform: translateY(-50%);
+}
+
+.project-card-group .project-photos .image-four {
+    height: 7.75rem;
+    left: 30rem;
+    transform: matrix(1, 0.09, -0.09, 1, 0, 0) translateY(-50%);
+}
+
+.project-card-group .project-card .button-group {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project-card-group .project-card .primary-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.75rem 1rem 0.75rem 1.5rem;
+    margin: 0 1rem;
+}
+
+.project-card-group .project-card .primary-btn::after {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1rem;
+    width: 1rem;
+    padding-left: 1.5rem;
+}
+
+.project-card-group .project-card.lite .primary-btn {
+    background-color: var(--primaryLight);
+    color: var(--primary);
+    border: 1px solid var(--primaryLight);
+}
+
+.project-card-group .project-card.lite .primary-btn:hover {
+    background-color: var(--primary);
+    color: var(--primaryLight);
+}
+
+.project-card-group .project-card .secondary-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.75rem 1rem 0.75rem 1.5rem;
+    margin: 0 1rem;
+}
+
+.project-card-group .project-card .secondary-btn::after {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1rem;
+    width: 1rem;
+    padding-left: 1.5rem;
+}
+
+.project-card-group .project-card.lite .secondary-btn {
+    border-radius: 0.75rem;
+    background-color: var(--secondaryLight);
+    color: var(--secondary);
+    border: 1px solid var(--secondaryLight);
+}
+
+.project-card-group .project-card.lite .secondary-btn:hover {
+    background-color: var(--secondary);
+    color: var(--secondaryLight);
+}
+
+/* ****************************** */
+/* ********** PERSONAL ********** */
+/* ****************************** */
+
+#personalProjects.project-card-group .project-card {
+    background-color: var(--secondary);
+    color: var(--primaryLight);
+    border-radius: 0 1.5rem 1.5rem 0;
+    width: 80%;
+}
+
+#personalProjects.project-card-group .project-card.active {
+    background-color: var(--secondaryLight);
+    color: var(--secondary);
+    z-index: 10;
+}
+
+#personalProjects.project-card-group .project-card.active .primary-btn.live-demo::after {
+    background-image: url("/assets/images/icon_livepreview_v2-accent.png");
+}
+
+#personalProjects.project-card-group .project-card.active .primary-btn.live-demo:hover::after {
+    background-image: url("/assets/images/icon_livepreview_v2-primary.png");
+}
+
+#personalProjects.project-card-group .project-card.active .primary-btn.code-preview::after {
+    background-image: url("/assets/images/icon_github-accent.png");
+}
+
+#personalProjects.project-card-group .project-card.active .primary-btn.code-preview:hover::after {
+    background-image: url("/assets/images/icon_github-primary.png");
+}
+
+#personalProjects.project-card-group .project-card.active .primary-btn.view-design::after {
+    background-image: url("/assets/images/icon_adobexd-accent.png");
+}
+
+#personalProjects.project-card-group .project-card.active .primary-btn.view-design:hover::after {
+    background-image: url("/assets/images/icon_adobexd-primary.png");
+}
+
+#personalProjects.project-card-group .project-card .primary-btn.live-demo::after {
+    background-image: url("/assets/images/icon_livepreview_v2-primary.png");
+}
+
+#personalProjects.project-card-group .project-card .primary-btn.live-demo:hover::after {
+    background-image: url("/assets/images/icon_livepreview_v2-accent.png");
+}
+
+#personalProjects.project-card-group .project-card .primary-btn.code-preview::after {
+    background-image: url("/assets/images/icon_github-primary.png");
+}
+
+#personalProjects.project-card-group .project-card .primary-btn.code-preview:hover::after {
+    background-image: url("/assets/images/icon_github-accent.png");
+}
+
+#personalProjects.project-card-group .project-card .primary-btn.view-design::after {
+    background-image: url("/assets/images/icon_adobexd-accent.png");
+}
+
+#personalProjects.project-card-group .project-card .primary-btn.view-design:hover::after {
+    background-image: url("/assets/images/icon_adobexd-primary.png");
+}
+
+/* ****************************** */
+/* ******** PROFESSIONAL ******** */
+/* ****************************** */
+
+#professionalProjects.project-card-group {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#professionalProjects.project-card-group .section-title {
+    padding-right: 2rem;
+    text-align: end;
+}
+
+#professionalProjects.project-card-group .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    background-color: var(--primary);
+    color: var(--primaryLight);
+    border-radius: 1.5rem 0 0 1.5rem;
+    width: 80%;
+}
+
+#professionalProjects.project-card-group .project-card h2,
+#professionalProjects.project-card-group .project-card p {
+    font-size: 1.25rem;
+    text-align: end;
+    color: var(--primaryLight);
+}
+
+#professionalProjects.project-card-group .project-card.active {
+    background-color: var(--primaryLight);
+    color: var(--primary);
+    z-index: 10;
+}
+
+#professionalProjects.project-card-group .project-card.active h2,
+#professionalProjects.project-card-group .project-card.active p {
+    color: var(--primary);
+}
+
+#professionalProjects.project-card-group .project-photos img {
+    right: 0;
+    left: initial;
+}
+
+#professionalProjects.project-card-group .project-photos .image-two {
+    right: 11.5rem;
+    left: initial;
+}
+
+#professionalProjects.project-card-group .project-photos .image-three {
+    right: 21.5rem;
+    left: initial;
+}
+
+#professionalProjects.project-card-group .project-photos .image-four {
+    right: 30rem;
+    left: initial;
+}
+
+#professionalProjects.project-card-group .project-card .button-group {
+    justify-content: flex-end;
+}
+
+#professionalProjects.project-card-group .project-card.active .secondary-btn.live-demo::after {
+    background-image: url("/assets/images/icon_livepreview_v2.png");
+}
+
+#professionalProjects.project-card-group .project-card.active .secondary-btn.live-demo:hover::after {
+    background-image: url("/assets/images/icon_livepreview_v2-green.png");
+}
+
+#professionalProjects.project-card-group .project-card.active .secondary-btn.code-preview::after {
+    background-image: url("/assets/images/icon_github-white.png");
+}
+
+#professionalProjects.project-card-group .project-card.active .secondary-btn.code-preview:hover::after {
+    background-image: url("/assets/images/icon_github-green.png");
+}
+
+#professionalProjects.project-card-group .project-card.active .secondary-btn.view-design::after {
+    background-image: url("/assets/images/icon_adobexd-white.png");
+}
+
+#professionalProjects.project-card-group .project-card.active .secondary-btn.view-design:hover::after {
+    background-image: url("/assets/images/icon_adobexd-green.png");
+}
+
+#professionalProjects.project-card-group .project-card .secondary-btn.live-demo::after {
+    background-image: url("/assets/images/icon_livepreview_v2-green.png");
+}
+
+#professionalProjects.project-card-group .project-card .secondary-btn.live-demo:hover::after {
+    background-image: url("/assets/images/icon_livepreview_v2.png");
+}
+
+#professionalProjects.project-card-group .project-card .secondary-btn.code-preview::after {
+    background-image: url("/assets/images/icon_github-green.png");
+}
+
+#professionalProjects.project-card-group .project-card .secondary-btn.code-preview:hover::after {
+    background-image: url("/assets/images/icon_github-white.png");
+}
+
+#professionalProjects.project-card-group .project-card .secondary-btn.view-design::after {
+    background-image: url("/assets/images/icon_adobexd-green.png");
+}
+
+#professionalProjects.project-card-group .project-card .secondary-btn.view-design:hover::after {
+    background-image: url("/assets/images/icon_adobexd-white.png");
+}

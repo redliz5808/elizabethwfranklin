@@ -1,0 +1,33 @@
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 3rem;
+    font-size: 1.15rem;
+    position: relative;
+    height: 100%;
+}
+
+#experience .content {
+    margin-top: 11rem;
+    height: 100%;
+}
+
+#experience .button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#experience .resume-link {
+    display: inline-block;
+    font-size: 1.15rem;
+    color: var(--primary);
+    padding: 0.5rem 0;
+}
+
+#experience .resume-link:hover {
+    color: var(--secondary);
+}

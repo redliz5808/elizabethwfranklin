@@ -1,0 +1,39 @@
+#contact {
+    font-size: 1.15rem;
+    color: var(--secondary);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+#contact .content {
+    margin-top: 11rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+#contact .large-text {
+    font-size: 2rem;
+}
+
+#contact .content img {
+    max-width: 15rem;
+}
+
+#contact .contact-link {
+    display: inline-block;
+    font-size: 1.15rem;
+    color: var(--primary);
+    padding: 0.5rem 0;
+}
+
+#experience .resume-link:hover {
+    color: var(--secondary);
+}
