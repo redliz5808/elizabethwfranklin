@@ -31,3 +31,17 @@
 #experience .resume-link:hover {
     color: var(--secondary);
 }
+
+@media screen and (max-width: 1200px) {
+    #experience {
+        padding: 0 2rem;
+    }
+
+    #experience h1 {
+        font-size: 3.5rem;
+    }
+    #experience .content {
+        margin-top: initial;
+        height: 100%;
+    }
+}
