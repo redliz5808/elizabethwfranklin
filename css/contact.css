@@ -37,3 +37,9 @@
 #experience .resume-link:hover {
     color: var(--secondary);
 }
+
+@media screen and (max-width: 1200px) {
+    #contact .content {
+        margin-top: 0;
+    }
+}
