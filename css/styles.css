@@ -219,11 +219,13 @@ footer .cookie img {
     nav {
         padding: 1rem 1rem;
         position: relative;
-        width: 100%;
+        /* width: 100%; */
+        width: auto;
     }
 
     nav .site-info {
-        width: 80%;
+        /* width: 80%; */
+        width: fit-content;
     }
 
     nav .site-info .nav-title {
@@ -254,7 +256,8 @@ footer .cookie img {
 
     nav .mobile-nav-toggler {
         display: initial;
-        width: 20%;
+        /* width: 20%; */
+        width: fit-content;
     }
 
     footer {
