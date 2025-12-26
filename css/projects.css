@@ -21,7 +21,7 @@
     font-family: var(--primary-family);
     font-size: 1.5rem;
     font-weight: 600;
-    width: 100%;
+    /* width: 100%; */
     margin-bottom: 3.13rem;
 }
 
