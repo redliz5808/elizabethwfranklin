@@ -450,3 +450,10 @@
         text-align: start;
     }
 }
+
+@media screen and (max-width: 992px) {
+    #personalProjects.project-card-group .project-card,
+    #professionalProjects.project-card-group .project-card {
+        width: initial;
+    }
+}
