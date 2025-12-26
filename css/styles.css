@@ -94,6 +94,10 @@ a:hover {
     margin-right: 1rem;
 }
 
+.d-desktop-none {
+    display: none;
+}
+
 /* ****************************** */
 /* ********** SITE NAV ********** */
 /* ****************************** */
@@ -206,6 +210,10 @@ footer .cookie img {
         left: initial;
         transform: initial;
         font-size: 5rem;
+    }
+
+    .d-desktop-none {
+        display: initial;
     }
 
     nav {
