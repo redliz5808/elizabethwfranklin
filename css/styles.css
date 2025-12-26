@@ -220,7 +220,7 @@ footer .cookie img {
         padding: 1rem 1rem;
         position: relative;
         /* width: 100%; */
-        width: calc(100% - 0.6rem);
+        width: calc(100% - 2rem);
     }
 
     nav .site-info {
