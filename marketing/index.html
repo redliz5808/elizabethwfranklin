@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Marketing Examples | Elizabeth W. Franklin</title>
+        <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon" />
+
+        <meta name="description" content="With over 15 years in the tech industry and nearly 10 years of volunteer experience, Elizabeth is ready to tackle the most difficult tasks." />
+        <link rel="canonical" href="https://elizabethwfranklin.com/marketing/" />
+        <meta property="og:title" content="Marketing Examples | EWF" />
+        <meta property="og:type" content="application" />
+        <meta property="og:url" content="https://elizabethwfranklin.com/marketing/" />
+        <meta property="og:image" content="https://www.elizabethwfranklin.com/assets/images/meta_experience.png" />
+        <meta property="og:site_name" content="EWF" />
+        <meta property="og:description" content="With over 15 years in the tech industry and nearly 10 years of volunteer experience, Elizabeth is ready to tackle the most difficult tasks." />
+
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
+
+        <!-- SWIPER CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="/css/marketing.css" />
+    </head>
+    <body id="marketing">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <iframe src="https://youtube.com/embed/o-2Zk7kHr5g" title="2024 FMD Social Tech Support" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe src="https://youtube.com/embed/mCDWGvrcPu8" title="2024 FMD Social Services YE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe
+                        src="https://youtube.com/embed/GsbXrdGqSB4"
+                        title="2025 CF Social Apparel Customization"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <!-- SWIPER SCRIPTS -->
+        <script type="module">
+            import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs";
+
+            const swiper = new Swiper(".swiper", {
+                slidesPerView: 1,
+                // Optional parameters
+                // direction: "vertical",
+                loop: true,
+                effect: "cube",
+                cubeEffect: {
+                    slideShadows: false,
+                },
+
+                // If we need pagination
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+        <!-- CUSTOM SCRIPTS -->
+        <script type="module">
+            fetch("/api/data")
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);                    
+                })
+                .catch((error) => console.error("Error fetching data:", error));
+            let marketingImages = [];
+
+            console.log(allImages);
+        </script>
+    </body>
+</html>
