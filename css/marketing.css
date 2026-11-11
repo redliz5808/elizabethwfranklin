@@ -2,9 +2,13 @@ body#marketing {
     background-color: var(--primary);
 }
 
+#marketing nav {
+    background-color: var(--constrast);
+}
+
 #marketing .swiper-slide {
     background-color: var(--secondary);
-    height: 100vh;
+    height: 90vh;
     max-width: 100vw;
     display: flex;
     justify-content: center;
@@ -14,6 +18,12 @@ body#marketing {
 .swiper-slide iframe {
     height: 100%;
     width: 100%;
+}
+
+.swiper-slide img {
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
 }
 
 .swiper-button-next, .swiper-button-prev {
